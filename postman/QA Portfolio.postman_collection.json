@@ -26,6 +26,25 @@
 					]
 				}
 			},
+			 "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "",
+              "pm.test(\"Response has title and body\", function () {",
+              "    const json = pm.response.json();",
+              "    pm.expect(json).to.have.property(\"title\");",
+              "    pm.expect(json).to.have.property(\"body\");",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
 			"response": []
 		}
 	]
