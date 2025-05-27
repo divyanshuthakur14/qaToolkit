@@ -1,0 +1,32 @@
+{
+	"info": {
+		"_postman_id": "1b41e71a-e351-4429-94c8-4af5469a73a9",
+		"name": "QA Portfolio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45076719",
+		"_collection_link": "https://divyanshusinghthakur.postman.co/workspace/dst-api-test~4e3eab64-7e74-4746-90b9-57f08e31f370/collection/45076719-1b41e71a-e351-4429-94c8-4af5469a73a9?action=share&source=collection_link&creator=45076719"
+	},
+	"item": [
+		{
+			"name": "Mock Feedback GET Test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://run.mocky.io/v3/1f23dedf-4fbe-42a2-aca0-2552b97f65db",
+					"protocol": "https",
+					"host": [
+						"run",
+						"mocky",
+						"io"
+					],
+					"path": [
+						"v3",
+						"1f23dedf-4fbe-42a2-aca0-2552b97f65db"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
