@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "0a04be5c-be89-4df3-88c2-2b3cb8dbbdd3",
+		"name": "theWonderersPen",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45076719",
+		"_collection_link": "https://divyanshusinghthakur.postman.co/workspace/dst-api-test~4e3eab64-7e74-4746-90b9-57f08e31f370/collection/45076719-0a04be5c-be89-4df3-88c2-2b3cb8dbbdd3?action=share&source=collection_link&creator=45076719"
+	},
+	"item": [
+		{
+			"name": "Post contactUs",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Aryan Raj\",\r\n  \"email\": \"aryan@example.com\",\r\n  \"message\": \"This is a test message from Postman\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://thewondererspenbackend.onrender.com/contact",
+					"protocol": "https",
+					"host": [
+						"thewondererspenbackend",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"contact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get posts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Aryan Raj\",\r\n  \"email\": \"aryan@example.com\",\r\n  \"message\": \"This is a test message from Postman\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "https://thewondererspenbackend.onrender.com/post",
+					"protocol": "https",
+					"host": [
+						"thewondererspenbackend",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete posts",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://thewondererspenbackend.onrender.com/contact?email=aryan@example.com",
+					"protocol": "https",
+					"host": [
+						"thewondererspenbackend",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"contact"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "aryan@example.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a post",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFyeWFucmFqMDcxNDIxQGdtYWlsLmNvbSIsImlkIjoiNjgwZGI2YzFkNzYwNTgwNDBjYzhlYzlmIiwiaWF0IjoxNzQ4NDUzNzQ3LCJleHAiOjE3NDg0NTczNDd9.0uY_EvZ1VWiTz3NRKayBcO3t-C7HPNoYTolq0HNhTeg",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "681b91dc37133f5c65422689",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "South Korea",
+							"type": "text"
+						},
+						{
+							"key": "summary",
+							"value": "Under the Green Light is a dark, psychological BL manhwa that explores the complex relationship between Matthew Rayner, a sculptor with a haunting past, and Jin Cheongwoo, a powerful and enigmatic mafia boss",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "<p>Characters Breakdown</p><p>Matthew Rayner: A broken artist haunted by the past. He’s cold, sharp, and distant, but under that mask lies deep vulnerability and emotional scars that still bleed.</p><p>Jin Cheongwoo: Calm, dominant, and dangerous. Jin enters Matthew’s world with control and curiosity, but quickly becomes entangled in a dark obsession that challenges his composed exterior.</p><p><br></p><p><br></p><p>Themes and Symbolism</p><p>Under the Green Light isn’t just a story about attraction—it’s a psychological exploration of what happens when two damaged people collide.</p><p>Obsession vs. Love: Where is the line between devotion and control?</p><p>Art as Escape: Matthew uses sculpting to process his pain, Jin uses it to immortalize desire.</p><p><br></p><p>What I Loved</p><p>The slow-burning tension between Matthew and Jin.The emotional complexity that makes you question what’s right or wrong.The way trauma is portrayed—raw, real, and not romanticized.</p><p><br></p>",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"type": "file",
+							"src": [],
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://thewondererspenbackend.onrender.com/post",
+					"protocol": "https",
+					"host": [
+						"thewondererspenbackend",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"post"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
